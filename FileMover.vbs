@@ -266,9 +266,9 @@ Sub ShowBalloonSummary(moved, renamed, skipped)
     Dim summary, singleFileName
 
     If moved = 1 And objArgs.Count = 1 Then
-        ' Only one file moved, show first 15 characters of the file name
+        ' Only one file moved, show first 30 characters of the file name
         singleFileName = fso.GetFileName(objArgs(0))
-        If Len(singleFileName) > 15 Then
+        If Len(singleFileName) > 30 Then
             singleFileName = Left(singleFileName, 30) & "..."
         End If
         summary = "Moved file: " & singleFileName
