@@ -1,0 +1,6 @@
+# Ignore FileMover log files
+*.log
+
+# Ignore temporary files
+*.tmp
+*.bak
